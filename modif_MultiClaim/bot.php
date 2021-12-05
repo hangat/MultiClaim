@@ -475,15 +475,162 @@ $ch = curl_init();
       $res = curl_exec($ch);
 return $res;
 }
-	
 
+//=== Defenisi Host ===/
+$host1 = "https://auto.multiclaim.net/session/autofaucet";
+$host2 = "https://bestautofaucet.com/session/autofaucet";
+$host3 = "https://proinfinity.fun/session/autofaucet";
+$host4 = "https://phoenixfaucets.xyz/session/autofaucet";
 
-//=========== Mulai di sini ===============//
-error_reporting(0);
-// MENU
+$sl1 = "https://auto.multiclaim.net/sl";
+$sl2 = "https://bestautofaucet.com/sl";
+$sl3 = "https://proinfinity.fun/sl";
+$sl4 = "https://phoenixfaucets.xyz/sl";
 
-while(true){
-    {
+$host="";$bost="";$sl="";
+$sTokenA1='<i class="fas fa-coins"></i> Tokens: ';
+$sTokenA2='<i class="fas fa-coins"></i> Coins: ';
+$sTokenA3='<i class="fas fa-coins"></i> INFINITY Coin: ';
+$sTokenA4='<i class="fas fa-coins"></i> Phoenix Token: ';
+$sTokenA='';
+$sTokenB1='<i class="fas fa-coins"></i> Tokens: ';
+$sTokenB2='<i class="fas fa-coins"></i> Coins: ';
+$sTokenB3='<i class="fas fa-coins"></i> INFINITY Coin: ';
+$sTokenB4='<i class="fas fa-coins"></i> Tokens: ';
+$sTokenB='';
+
+function cRun($menu){
+global $host1, $host2, $host3, $host4, $sl1, $sl2, $sl3, $sl4;
+global $bost1, $bost2, $bost3, $bost4, $host,$bost, $sl;
+global $sTokenA1, $sTokenA2, $sTokenA3, $sTokenA4, $sTokenA;
+global $sTokenB1, $sTokenB2, $sTokenB3, $sTokenB4, $sTokenB;
+
+    switch($menu){
+        case 2:
+            // echo "2";
+            $host = $host1;
+            $bost = $bost1;
+            $sl = $sl1;
+            $sTokenA = $sTokenA1;
+            $sTokenB = $sTokenB1;
+            break;
+        case 3:
+            // echo "3";
+            $host = $host2;
+            $bost = $bost2;
+            $sl = $sl2;
+            $sTokenA = $sTokenA2;
+            $sTokenB = $sTokenB2;
+            break;
+        case 4:
+            // echo "4";
+            $host = $host3;
+            $bost = $bost3;
+            $sl = $sl3;
+            $sTokenA = $sTokenA3;
+            $sTokenB = $sTokenB3;
+            break;
+        case 5:
+            // echo "5";
+            $host = $host4;
+            $bost = $bost4;
+            $sl = $sl4;
+            $sTokenA = $sTokenA4;
+            $sTokenB = $sTokenB4;
+            break;
+        default:
+            // echo "default";
+        
+    }
+}
+
+function menu0(){
+    global $kuning2, $green2, $red2, $putih2, $ungu2;
+
+    system('clear');
+    sleep(1);
+    echo "                       \e[1;35m<<<\033[1;31m[\033[1;32m+\033[1;31m]$kuning2 SCRIPT INFO \033[1;31m[\033[1;32m+\033[1;31m]\e[1;35m>>>\n\n";
+    sleep(1);
+    echo$green2. "◼$kuning2 Apa Yang Baru di v2.6 ? \n";
+    echo$red2. ">$green2 Bug Fixed\n";
+    echo$red2. ">$green2 Anti Baned\n";
+    echo$red2. ">$green2 Auto Capture Data\n";
+    echo$red2. ">$green2 4 Host In One Script\n";
+    echo$red2. ">$green2 Remove Feature Wd To Fp\n\n";
+
+    echo$green2. "◼$kuning2 Tentang BrutalClaim\n";
+    echo$red2. ">$putih2 Script$ungu2 MultiClaim$green2 v1.8$putih2 Telah Berevolusi Menjadi Script$ungu2 BrutalClaim$green2 v2.6$putih2 Sejak 25-November-2021\n\n";
+
+    echo$green2. "◼$kuning2 4 Host Dalam Satu Script\n";
+    echo$red2. ">$putih2 Anda Harus Daftar Terlebih Dahulu & Mengumpulkan Token Di Setiap Website Nya, Dan Untuk Menjalankan Beberapa Host Anda Bisa Menjalankan Nya Di New Session Di Setiap Host Nya, Atau Bisa Menggunakan Fitur Perintah$green2 Tmux$red2 ($kuning2 Untuk Menjalankan Beberapa Tab Di Satu Session$red2 )\n\n\n";
+    echo$putih2. $enter = "[!] [Pending Process (Press Enter) - To Back]";
+    $enter = trim(fgets(STDIN));
+
+}
+
+function menu1(){
+    global $kuning2, $green2, $red2, $putih2;
+    system('clear');
+    echo $green2. "Input diisi di file :" . $kuning2. "inc.php " . $green2. "saja\n\n"; sleep(1);
+
+    usleep(100000);
+    echo "\n\n\033[1;31m[\033[1;37m✓\033[1;31m]$green2 Data Telah Berhasil Disimpan!\n\n";
+    usleep(100);
+    echo$putih2. " Please wait ";
+    sleep(1);
+    for ($x = 0; $x <= 10; $x++) {
+        usleep(50000);echo $green2. "*";
+        usleep(70000);echo $red2. "*";
+    }
+    echo "\n\n";
+    sleep(1);
+    echo$putih2."[!] [Pending Process (Press Enter) - To Back]" . "\n\n";
+    $enter = trim(fgets(STDIN));
+    system('clear');
+
+}
+
+function menu6(){
+    global $green2,$putih2,$red2;
+    echo"\n\n";
+    sleep(1);
+    echo$putih2. " Please wait ";
+    sleep(1);
+    for ($x = 0; $x <= 10; $x++) {
+        usleep(50000);echo $green2. "*";
+        usleep(70000);echo $red2. "*";
+    }
+    echo "\n\n";
+    system(" xdg-open https://chat.whatsapp.com/IWFGtvAIYIM72aquw3XlZK ");
+    sleep(1);
+    echo"\n\n";
+    echo "[Process completed (code 4) - press Enter]\n\n";
+    $enter = trim(fgets(STDIN));
+}
+
+function menu7(){
+    global $green2,$putih2,$red2;
+
+    echo"\n\n";
+    sleep(1);
+    echo$putih2. " Please wait ";
+    sleep(1);
+    for ($x = 0; $x <= 10; $x++) {
+        usleep(50000);echo $green2. "*";
+        usleep(70000);echo $red2. "*";
+    }
+    echo "\n\n";
+    system (" xdg-open https://wa.me/+6281617922247?text=Permisi+bang");
+    sleep(1);
+    echo"\n\n";
+    echo "[Process completed (code 5) - press Enter]";
+    $enter = trim(fgets(STDIN));
+    
+}
+
+function showMenu(){
+    global $kuning2, $green2, $red2, $putih2, $menu;
+
     system('clear');
     echo "                          \e[1;35m<<<\033[1;31m[\033[1;32m+\033[1;31m]$kuning2 MENU \033[1;31m[\033[1;32m+\033[1;31m]\e[1;35m>>>\n\n";
     //sleep(1);
@@ -505,976 +652,295 @@ while(true){
     //sleep(1);
     echo$red2. " ◼$green2 Choose$putih2 :$green2 ";
     $menu = trim(fgets(STDIN));
+
+}
+
+function globalRun(){
+    global $kuning2, $green2, $red2, $On_Red, $putih2, $blue2, $lblue2, $yellow2, $ungu2;
+    global $useragent, $ecID, $host, $sl, $bost, $user,$reset,$sTokenA,$sTokenB;
+
+    //$host1 = "https://auto.multiclaim.net/session/autofaucet";
+    echo "\n\n";
+    echo $kuning2 . "Data yg dibutuhkan : \n";
+    echo $green2 . "_____________________ \n" . $kuning2 ;
+    echo "User Agent : \n " . $green2 . $useragent . "\n\n";
+    echo $kuning2 . "ExpressCrypto ID : " . $green2 . $ecID . "\n";
+    echo $kuning2 . "Host : " . $green2 . $host . "\n";
+    echo $kuning2 . "Boost : " . $green2 . $bost . "\n\n";
+
+    //Menerima Data
+    sleep(1);
+    echo $red2.">>> \033[1;32mRunning $kuning2 [";
+    for ($x = 0; $x <= 10; $x++) {
+        usleep(50000);echo $green2. "*";
+        usleep(70000);echo $red2. "*";
+    }
+    echo"$kuning2]\n\n";
+    $header = array(
+    "user-agent:".$useragent,
+    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost%22%2C%22payout_mode%22:%22ec%22}");
+    // Curl Get
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $host);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    $res = curl_exec($ch);
+    $token = explode($sTokenA ,$res);
+    if(isset($token[1])){
+        $token = explode('</div>',$token[1])[0];
+    }
+    // sleep(1);
+    echo$red2. "◼$kuning2 Welcome ";
+    sleep(1);
+    echo $red2."[".$green2.$user.$red2."]"."\n";
+    sleep(1);
+    echo$green2."◼$putih2 $ecID\n";
+    echo$red2. ">$lblue2 Token$putih2  :$kuning2 $token\n";
+    echo$red2. ">$lblue2 Boosts$putih2 :";echo$kuning2." $bost"."X ";echo $red2."($putih2 Claim every 60s$red2)\n";
+    echo$red2."══════════════════════════════════════════════════";
+    echo"\n";
+    echo$putih2. $enter = "[!] [Pending Process (Press " . $green2 . "Enter" . $putih2 . " ) - To Start]\n\n";
+    $enter = trim(fgets(STDIN));
+
+    // START
+    while(true){
+        $header = array(
+        "user-agent:".$useragent,
+        "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost%22%2C%22payout_mode%22:%22ec%22}");
+        // Curl Get
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $host);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        $res = curl_exec($ch);
+        $token = explode($sTokenA,$res);
+        if(isset($token[1])){
+            $token = explode('</div>',$token[1])[0];
+        }
+        if($token == ""){
+            echo$On_Red."\033[1;37mCookie Not Found / Expired, Silahkan Isi / Ganti Ulang Cookie!\n".$reset;
+            sleep(1);
+            exit;
+        }else{
+            if($token == "0"){
+                sleep(1);
+                echo$On_Red."\033[1;37m   Butuh Token Untuk Menjalankan, Silahkan Farming Terlebih Dahulu !  \n".$reset;
+                sleep(1);
+                echo"\n";
+                echo "\033[1;91m ◼$green2 Tunggu 3 Detik Anda Akan Diarahkan Otomatis Untuk Farming Token\n";
+                sleep(1);
+                echo$putih2."Please wait ";
+                sleep(1);
+                echo$red2."•";
+                sleep(1);
+                echo$kuning2."•";
+                sleep(1);
+                echo$green2."•";
+                sleep(1);
+                system("xdg-open " . $sl);
+                sleep(1);
+                exit;
+            }else{
+                echo $reset;
+
+                $header = array(
+                "user-agent:".$useragent,
+                "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost%22%2C%22payout_mode%22:%22ec%22}");
+                // Curl Get
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, $host);
+                curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+                $res = curl_exec($ch);
+                $token = explode($sTokenB,$res);
+                if(isset($token[1])){
+                    $token = explode('</div>',$token[1])[0];
+                }
+                echo"\n,";
+                for ($i=30;$i>-1;$i--){
+                    echo "\r                                                                    \r";
+                    date_default_timezone_set('Asia/Jakarta');
+                    echo $red2."[ "; echo$green2."START";echo"$red2 | ";echo$lblue2. date('H:i:s');echo"$red2 ]";
+                    echo $yellow2." Please Wait ";echo$green2."... ";echo$ungu2."( ";
+                    $ii = $i * 2;
+                    echo$putih2."$ii";echo$putih2."s";echo$ungu2." )";
+                    sleep(2);
+                    echo "\r                                                                     \r";
+                }
+                sleep(1);
+
+                $header = array(
+                "user-agent:".$useragent,
+                "referer: " . $host,
+                "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost%22%2C%22payout_mode%22:%22ec%22}");
+                // Curl Post
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, $host);
+                curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+                curl_setopt($ch, CURLOPT_POST, 1);
+                $data = "";
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+                $cek = curl_exec($ch);
+                $r1 = explode('Successfully sent',$cek);
+                if(isset($r1[1])){
+                    $r1 = explode('to',$r1[1])[0];
+                }
+                $r2 = explode('Successfully sent',$cek);
+                if(isset($r2[2])){
+                    $r2 = explode('to',$r2[2])[0];
+                }
+                $r3 = explode('Successfully sent',$cek);
+                if(isset($r3[3])){
+                    $r3 = explode('to',$r3[3])[0];
+                }
+                $r4 = explode('Successfully sent',$cek);
+                if(isset($r4[4])){
+                    $r4 = explode('to',$r4[4])[0];
+                }
+                $r5 = explode('Successfully sent',$cek);
+                if(isset($r5[5])){
+                    $r5 = explode('to',$r5[5])[0];
+                }
+                $r6 = explode('Successfully sent',$cek);
+                if(isset($r6[6])){
+                    $r6 = explode('to',$r6[6])[0];
+                }
+                $r7 = explode('Successfully sent',$cek);
+                if(isset($r7[7])){
+                    $r7 = explode('to',$r7[7])[0];
+                }
+                $r8 = explode('Successfully sent',$cek);
+                if(isset($r8[8])){
+                    $r8 = explode('to',$r8[8])[0];
+                }
+                $r9 = explode('Successfully sent',$cek);
+                if(isset($r9[9])){
+                    $r9 = explode('to',$r9[9])[0];
+                }
+                $r10 = explode('Successfully sent',$cek);
+                if(isset($r10[10])){
+                    $r10 = explode('to',$r10[10])[0];
+                }
+                $r11 = explode('Successfully sent',$cek);
+                if(isset($r11[11])){
+                    $r11 = explode('to',$r11[11])[0];
+                }
+                $r12 = explode('Successfully sent',$cek);
+                if(isset($r12[12])){
+                    $r12 = explode('to',$r12[12])[0];
+                }
+                $r13 = explode('Successfully sent',$cek);
+                if(isset($r13[13])){
+                    $r13 = explode('to',$r13[13])[0];
+                }
+                $r14 = explode('Successfully sent',$cek);
+                if(isset($r14[14])){
+                    $r14 = explode('to',$r14[14])[0];
+                }
+                $r15 = explode('Successfully sent',$cek);
+                if(isset($r15[15])){
+                    $r15 = explode('to',$r15[15])[0];
+                }
+                date_default_timezone_set('Asia/Jakarta');
+                echo$ungu2."════════";echo $red2."[ "; echo$lblue2. date('d-F-Y').$reset;echo"$red2 | ";echo$kuning2. date('H:i:s');echo$red2." ]";echo$ungu2."══════════\n";
+                echo$red2."[\033[1;37mi\033[1;31m]$kuning2$r1\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37mt\033[1;31m]$kuning2$r2\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37ms\033[1;31m]$kuning2$r3\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37mm\033[1;31m]$kuning2$r4\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37me\033[1;31m]$kuning2$r5\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;31m•\033[1;31m]$kuning2$r6\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37mA\033[1;31m]$kuning2$r7\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37mw\033[1;31m]$kuning2$r8\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37mX\033[1;31m]$kuning2$r9\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37m-\033[1;31m]$kuning2$r10\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37mP\033[1;31m]$kuning2$r11\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37ml\033[1;31m]$kuning2$r12\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37mo\033[1;31m]$kuning2$r13\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37mi\033[1;31m]$kuning2$r14\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$red2."[\033[1;37mt\033[1;31m]$kuning2$r15\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
+                echo$blue2."════════════════════════════════════════════════\n";
+                sleep(2);
+            }
+        }
     }
 
 
+}
+
+//=========== Mulai di sini ===============//
+
+error_reporting(0);
+// MENU
+
+while(true){
+    showMenu();
+
+    switch($menu){
+        case 0: menu0();break;
+        case 1: menu1();break;
+        case 2: cRun($menu); globalRun();break;
+        case 3: cRun($menu); globalRun();break;
+        case 4: cRun($menu); globalRun();break;
+        case 5: cRun($menu); globalRun();break;
+        case 6: menu6();break;
+        case 7: menu7();break;
+    }
+ /*
     // MENU 0 WEBSITE LIST
-    if($menu== 0){
-        system('clear');
-        sleep(1);
-        echo "                       \e[1;35m<<<\033[1;31m[\033[1;32m+\033[1;31m]$kuning2 SCRIPT INFO \033[1;31m[\033[1;32m+\033[1;31m]\e[1;35m>>>\n\n";
-        sleep(1);
-        echo$green2. "◼$kuning2 Apa Yang Baru di v2.6 ? \n";
-        echo$red2. ">$green2 Bug Fixed\n";
-        echo$red2. ">$green2 Anti Baned\n";
-        echo$red2. ">$green2 Auto Capture Data\n";
-        echo$red2. ">$green2 4 Host In One Script\n";
-        echo$red2. ">$green2 Remove Feature Wd To Fp\n\n";
-
-        echo$green2. "◼$kuning2 Tentang BrutalClaim\n";
-        echo$red2. ">$putih2 Script$ungu2 MultiClaim$green2 v1.8$putih2 Telah Berevolusi Menjadi Script$ungu2 BrutalClaim$green2 v2.6$putih2 Sejak 25-November-2021\n\n";
-
-        echo$green2. "◼$kuning2 4 Host Dalam Satu Script\n";
-        echo$red2. ">$putih2 Anda Harus Daftar Terlebih Dahulu & Mengumpulkan Token Di Setiap Website Nya, Dan Untuk Menjalankan Beberapa Host Anda Bisa Menjalankan Nya Di New Session Di Setiap Host Nya, Atau Bisa Menggunakan Fitur Perintah$green2 Tmux$red2 ($yellow2 Untuk Menjalankan Beberapa Tab Di Satu Session$red2 )\n\n\n";
-        echo$putih2. $enter = "[!] [Pending Process (Press Enter) - To Back]";
-        $enter = trim(fgets(STDIN));
+    if($menu == 0){
+        menu0();
     }
 
     // MENU 1 INPUT DATA
     if($menu == 1){
-        system('clear');
-        echo $green2. "Input diisi di file :" . $red2. "inc.php " . $green2. "saja\n\n"; sleep(2);
-
-        usleep(100000);
-        echo "\n\n\033[1;31m[\033[1;37m✓\033[1;31m]$green2 Data Telah Berhasil Disimpan!\n\n";
-        usleep(100);
-        echo$putih2. " Please wait ";
-        sleep(1);
-        for ($x = 0; $x <= 10; $x++) {
-            usleep(50000);echo $green2. "*";
-            usleep(70000);echo $red2. "*";
-        }
-        echo "\n\n";
-        //====== MODIF 1 END ====================
-        sleep(1);
-        system('clear');
+        menu1();
     }
 
 
-//============================================================
-// MENU 2 RUN AUTO.MULTICLAIM.NET
-if($menu== 2){
-    // $bost1=1;
-    $host1 = "https://auto.multiclaim.net/session/autofaucet";
-    echo $kuning2 . "Data yg dibutuhkan : \n\n";
-    echo "User Agent : \n " . $green2 . $useragent . "\n\n";
-    echo $kuning2 . "ExpressCrypto ID : " . $green2 . $ecID . "\n\n";
-    echo $kuning2 . "Host : " . $green2 . $host1 . "\n\n";
-    echo $kuning2 . "Boost : " . $green2 . $bost1 . "\n\n";
-
-    //Menerima Data
-    sleep(1);
-    echo $red2.">>> \033[1;32mRunning $kuning2 [";
-    for ($x = 0; $x <= 10; $x++) {
-        usleep(50000);echo $green2. "*";
-        usleep(70000);echo $red2. "*";
-    }
-    echo"$kuning2]\n\n\n";
-    $header = array(
-    "user-agent:".$useragent,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost1%22%2C%22payout_mode%22:%22ec%22}");
-    // Curl Get
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $host1);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    $res = curl_exec($ch);
-    $token = explode('<i class="fas fa-coins"></i> Tokens: ',$res);
-    if(isset($token[1])){
-    $token = explode('</div>',$token[1])[0];
-    }
-    sleep(1);
-    echo$red2. "◼$kuning2 Welcome ";
-    sleep(1);
-    echo $red2."[".$green2.$user.$red2."]"."\n";
-    sleep(1);
-    echo$green2."◼$putih2 $ecID\n\n";
-    echo$red2. ">$lblue2 Token$putih2  :$kuning2 $token"."\n";
-    echo$red2. ">$lblue2 Boosts$putih2 :";echo$kuning2." $bost1"."X ";echo $red2."($putih2 Claim every 30s$red2)\n";
-    echo$r2."══════════════════════════════════════════════════";
-    echo"\n";
-    echo$putih2. $enter = "[!] [Pending Process (Press " . $green2 . "Enter" . $putih2 . " ) - To Start]\n\n\n";
-    $enter = trim(fgets(STDIN));
-
-    // START
-    while(true){
-    $header = array(
-    "user-agent:".$useragent,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost1%22%2C%22payout_mode%22:%22ec%22}");
-    // Curl Get
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $host1);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    $res = curl_exec($ch);
-    $token = explode('<i class="fas fa-coins"></i> Tokens: ',$res);
-    if(isset($token[1])){
-        $token = explode('</div>',$token[1])[0];
-    }
-    if($token == ""){
-        echo$On_Red."\033[1;37mCookie Not Found / Expired, Silahkan Isi / Ganti Ulang Cookie!\n".$reset;
-        sleep(1);
-        exit;
-    }else{
-        if($token == "0"){
-            sleep(1);
-            echo$On_Red."\033[1;37m   Butuh Token Untuk Menjalankan, Silahkan Farming Terlebih Dahulu !  \n".$reset;
-            sleep(1);
-            echo"\n";
-            echo "\033[1;91m ◼$green2 Tunggu 3 Detik Anda Akan Diarahkan Otomatis Untuk Farming Token\n";
-            sleep(1);
-            echo$putih2."Please wait ";
-            sleep(1);
-            echo$red2."•";
-            sleep(1);
-            echo$kuning2."•";
-            sleep(1);
-            echo$green2."•";
-            sleep(1);
-            system("xdg-open https://auto.multiclaim.net/sl");
-            sleep(1);
-            exit;
-        }else{
-            echo $reset;
-
-            $header = array(
-            "user-agent:".$useragent,
-            "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost1%22%2C%22payout_mode%22:%22ec%22}");
-            // Curl Get
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, $host1);
-            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-            $res = curl_exec($ch);
-            $token = explode('<i class="fas fa-coins"></i> Tokens: ',$res);
-            if(isset($token[1])){
-                $token = explode('</div>',$token[1])[0];
-            }
-            echo"\n,";
-            for ($i=30;$i>-1;$i--){
-                echo "\r                                                                    \r";
-                date_default_timezone_set('Asia/Jakarta');
-                echo $red2."[ "; echo$green2."START";echo"$red2 | ";echo$lblue2. date('H:i:s');echo"$red2 ]";
-                echo $yellow2." Please Wait ";echo$green2."... ";echo$ungu2."( ";echo$putih2."$i";echo$putih2."s";echo$ungu2." )";
-                sleep(2);
-                echo "\r                                                                     \r";
-            }
-            sleep(1);
-
-            $header = array(
-            "user-agent:".$useragent,
-            "referer: " . $host1,
-            "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost1%22%2C%22payout_mode%22:%22ec%22}");
-            // Curl Post
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, $host1);
-            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-            curl_setopt($ch, CURLOPT_POST, 1);
-            $data = "";
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-            $cek = curl_exec($ch);
-            $r1 = explode('Successfully sent',$cek);
-            if(isset($r1[1])){
-                $r1 = explode('to',$r1[1])[0];
-            }
-            $r2 = explode('Successfully sent',$cek);
-            if(isset($r2[2])){
-                $r2 = explode('to',$r2[2])[0];
-            }
-            $r3 = explode('Successfully sent',$cek);
-            if(isset($r3[3])){
-                $r3 = explode('to',$r3[3])[0];
-            }
-            $r4 = explode('Successfully sent',$cek);
-            if(isset($r4[4])){
-                $r4 = explode('to',$r4[4])[0];
-            }
-            $r5 = explode('Successfully sent',$cek);
-            if(isset($r5[5])){
-                $r5 = explode('to',$r5[5])[0];
-            }
-            $r6 = explode('Successfully sent',$cek);
-            if(isset($r6[6])){
-                $r6 = explode('to',$r6[6])[0];
-            }
-            $r7 = explode('Successfully sent',$cek);
-            if(isset($r7[7])){
-                $r7 = explode('to',$r7[7])[0];
-            }
-            $r8 = explode('Successfully sent',$cek);
-            if(isset($r8[8])){
-                $r8 = explode('to',$r8[8])[0];
-            }
-            $r9 = explode('Successfully sent',$cek);
-            if(isset($r9[9])){
-                $r9 = explode('to',$r9[9])[0];
-            }
-            $r10 = explode('Successfully sent',$cek);
-            if(isset($r10[10])){
-                $r10 = explode('to',$r10[10])[0];
-            }
-            $r11 = explode('Successfully sent',$cek);
-            if(isset($r11[11])){
-                $r11 = explode('to',$r11[11])[0];
-            }
-            $r12 = explode('Successfully sent',$cek);
-            if(isset($r12[12])){
-                $r12 = explode('to',$r12[12])[0];
-            }
-            $r13 = explode('Successfully sent',$cek);
-            if(isset($r13[13])){
-                $r13 = explode('to',$r13[13])[0];
-            }
-            $r14 = explode('Successfully sent',$cek);
-            if(isset($r14[14])){
-                $r14 = explode('to',$r14[14])[0];
-            }
-            $r15 = explode('Successfully sent',$cek);
-            if(isset($r15[15])){
-                $r15 = explode('to',$r15[15])[0];
-            }
-            date_default_timezone_set('Asia/Jakarta');
-            echo$ungu2."════════";echo $red2."[ "; echo$lblue2. date('d-F-Y').$reset;echo"$red2 | ";echo$kuning2. date('H:i:s');echo$red2." ]";echo$ungu2."══════════\n";
-            echo$red2."[\033[1;37mi\033[1;31m]$kuning2$r1\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37mt\033[1;31m]$kuning2$r2\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37ms\033[1;31m]$kuning2$r3\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37mm\033[1;31m]$kuning2$r4\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37me\033[1;31m]$kuning2$r5\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;31m•\033[1;31m]$kuning2$r6\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37mA\033[1;31m]$kuning2$r7\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37mw\033[1;31m]$kuning2$r8\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37mX\033[1;31m]$kuning2$r9\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37m-\033[1;31m]$kuning2$r10\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37mP\033[1;31m]$kuning2$r11\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37ml\033[1;31m]$kuning2$r12\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37mo\033[1;31m]$kuning2$r13\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37mi\033[1;31m]$kuning2$r14\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$red2."[\033[1;37mt\033[1;31m]$kuning2$r15\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-            echo$blue2."════════════════════════════════════════════════\n";
-            sleep(2);
-        }
-    }
-}
-}
-
-//=============================================================================
-
-
-
-
-
-// MENU 3 RUN BESTAUTOFAUCET.COM
-if($menu== 3){
-    $host2 = "https://bestautofaucet.com/session/autofaucet";
-    echo $kuning2 . "Data yg dibutuhkan : \n\n";
-    echo "User Agent : \n " . $green2 . $useragent . "\n\n";
-    echo $kuning2 . "ExpressCrypto ID : " . $green2 . $ecID . "\n\n";
-    echo $kuning2 . "Host : " . $green2 . $host2 . "\n\n";
-    echo $kuning2 . "Boost : " . $green2 . $bost2 . "\n\n";
-
-    //Menerima Data
-    echo $red2.">>> \033[1;32mRunning $kuning2 [";
-    for ($x = 0; $x <= 10; $x++) {
-        usleep(50000);echo $green2. "*";
-        usleep(70000);echo $red2. "*";
-    }
-    echo"$kuning2]\n\n\n";
-    $header = array(
-    "user-agent:".$useragent,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22Shib%22%2C%22bcn%22%2C%22rdd%22%2C%22btt%22%2C%22dgb%22%2C%22trx%22%2C%22rvn%22%2C%22doge%22%2C%22VTC%22%2C%22pivx%22%2C%22KMD%22%2C%22usdt%22%2C%22PPC%22%2C%22xrp%22%2C%22ada%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost2%22%2C%22payout_mode%22:%22ec%22}");
-    // Curl Get
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $host2);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    $res = curl_exec($ch);
-    $token = explode('<i class="fas fa-coins"></i> Coins: ',$res);
-    if(isset($token[1])){
-        $token = explode('</div>',$token[1])[0];
-    }
-    sleep(1);
-    echo$red2. "◼$kuning2 Welcome ";
-    sleep(1);
-    echo $red2."[".$green2.$user.$red2."]"."\n";
-    sleep(1);
-    echo$green2."◼$putih2 $ecID\n\n";
-    echo$red2. ">$lblue2 Token$putih2  :$kuning2 $token"."\n";
-    echo$red2. ">$lblue2 Boosts$putih2 :";echo$kuning2." $bost2"."X ";echo $red2."($putih2 Claim every 30s$red2)\n";
-    echo$r2."═════════════════════════════════════════════";
-    sleep(1);
-    echo"\n";
-    echo$putih2. $enter = "[!] [Pending Process (Press " . $green2 . "Enter" . $putih2 . " ) - To Start]\n\n\n";
-    $enter = trim(fgets(STDIN));
-
-// START
-while(true){
-$header = array(
-"user-agent:".$useragent,
-"cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22Shib%22%2C%22bcn%22%2C%22rdd%22%2C%22btt%22%2C%22dgb%22%2C%22trx%22%2C%22rvn%22%2C%22doge%22%2C%22VTC%22%2C%22pivx%22%2C%22KMD%22%2C%22usdt%22%2C%22PPC%22%2C%22xrp%22%2C%22ada%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost2%22%2C%22payout_mode%22:%22ec%22}");
-// Curl Get
-  $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, $host2);
-  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-  $res = curl_exec($ch);
-$token = explode('<i class="fas fa-coins"></i> Tokens: ',$res);
-if(isset($token[1])){
-  $token = explode('</div>',$token[1])[0];
-}
-if($token == ""){
-echo$On_Red."\033[1;37mCookie Not Found / Expired, Silahkan Isi / Ganti Ulang Cookie!\n".$reset;
-sleep(1);
-exit;
-}else{
-if($token == "0"){
-sleep(1);
-echo$On_Red."\033[1;37m   Butuh Token Untuk Menjalankan, Silahkan Farming Terlebih Dahulu !  \n".$reset;
-sleep(2);
-echo"\n";
-echo "\033[1;91m ◼$green2 Tunggu 3 Detik Anda Akan Diarahkan Otomatis Untuk Farming Token\n";
-sleep(1);
-echo$putih2."Please wait ";
-sleep(1);
-echo$red2."•";
-sleep(1);
-echo$kuning2."•";
-sleep(1);
-echo$green2."•";
-sleep(1);
-system("xdg-open https://bestautofaucet.com/sl");
-sleep(1);
-exit;
-}else{
-echo $reset;
-
-
-
-$header = array(
-"user-agent:".$useragent,
-"cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22Shib%22%2C%22bcn%22%2C%22rdd%22%2C%22btt%22%2C%22dgb%22%2C%22trx%22%2C%22rvn%22%2C%22doge%22%2C%22VTC%22%2C%22pivx%22%2C%22KMD%22%2C%22usdt%22%2C%22PPC%22%2C%22xrp%22%2C%22ada%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost2%22%2C%22payout_mode%22:%22ec%22}");
-// Curl Get
-  $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, $host2);
-  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-  $res = curl_exec($ch);
-$token = explode('<i class="fas fa-coins"></i> Tokens: ',$res);
-if(isset($token[1])){
-  $token = explode('</div>',$token[1])[0];
-}
-echo"\n,";
-for ($i=30;$i>-1;$i--){
-echo "\r                                                                    \r";
-date_default_timezone_set('Asia/Jakarta');
-echo $red2."[ "; echo$green2."START";echo"$red2 | ";echo$lblue2. date('H:i:s');echo"$red2 ]";
-echo $yellow2." Please Wait ";echo$green2."... ";echo$ungu2."( ";echo$putih2."$i";echo$putih2."s";echo$ungu2." )";
-sleep(2);
-echo "\r                                                                     \r";
-}
-
-
-
-$header = array(
-"user-agent:".$useragent,
-"referer: " . $host2,
-"cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22Shib%22%2C%22bcn%22%2C%22rdd%22%2C%22btt%22%2C%22dgb%22%2C%22trx%22%2C%22rvn%22%2C%22doge%22%2C%22VTC%22%2C%22pivx%22%2C%22KMD%22%2C%22usdt%22%2C%22PPC%22%2C%22xrp%22%2C%22ada%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost2%22%2C%22payout_mode%22:%22ec%22}");
-// Curl Post
-  $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, $host2);
-  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-  curl_setopt($ch, CURLOPT_POST, 1);
-$data = "";
-  curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-  $cek = curl_exec($ch);
-$r1 = explode('Successfully sent',$cek);
-if(isset($r1[1])){
-  $r1 = explode('to',$r1[1])[0];
-}
-$r2 = explode('Successfully sent',$cek);
-if(isset($r2[2])){
-  $r2 = explode('to',$r2[2])[0];
-}
-$r3 = explode('Successfully sent',$cek);
-if(isset($r3[3])){
-  $r3 = explode('to',$r3[3])[0];
-}
-$r4 = explode('Successfully sent',$cek);
-if(isset($r4[4])){
-  $r4 = explode('to',$r4[4])[0];
-}
-$r5 = explode('Successfully sent',$cek);
-if(isset($r5[5])){
-  $r5 = explode('to',$r5[5])[0];
-}
-$r6 = explode('Successfully sent',$cek);
-if(isset($r6[6])){
-  $r6 = explode('to',$r6[6])[0];
-}
-$r7 = explode('Successfully sent',$cek);
-if(isset($r7[7])){
-  $r7 = explode('to',$r7[7])[0];
-}
-$r8 = explode('Successfully sent',$cek);
-if(isset($r8[8])){
-  $r8 = explode('to',$r8[8])[0];
-}
-$r9 = explode('Successfully sent',$cek);
-if(isset($r9[9])){
-  $r9 = explode('to',$r9[9])[0];
-}
-$r10 = explode('Successfully sent',$cek);
-if(isset($r10[10])){
-  $r10 = explode('to',$r10[10])[0];
-}
-$r11 = explode('Successfully sent',$cek);
-if(isset($r11[11])){
-  $r11 = explode('to',$r11[11])[0];
-}
-$r12 = explode('Successfully sent',$cek);
-if(isset($r12[12])){
-  $r12 = explode('to',$r12[12])[0];
-}
-$r13 = explode('Successfully sent',$cek);
-if(isset($r13[13])){
-  $r13 = explode('to',$r13[13])[0];
-}
-$r14 = explode('Successfully sent',$cek);
-if(isset($r14[14])){
-  $r14 = explode('to',$r14[14])[0];
-}
-$r15 = explode('Successfully sent',$cek);
-if(isset($r15[15])){
-  $r15 = explode('to',$r15[15])[0];
-}
-date_default_timezone_set('Asia/Jakarta');
-echo$ungu2."══════════";echo $red2."[ "; echo$lblue2. date('d-F-Y').$reset;echo"$red2 | ";echo$kuning2. date('H:i:s');echo$red2." ]";echo$ungu2."═════════\n";
-echo$red2."[\033[1;37mi\033[1;31m]$kuning2$r1\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37mt\033[1;31m]$kuning2$r2\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37ms\033[1;31m]$kuning2$r3\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37mm\033[1;31m]$kuning2$r4\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37me\033[1;31m]$kuning2$r5\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;31m•\033[1;31m]$kuning2$r6\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37mA\033[1;31m]$kuning2$r7\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37mw\033[1;31m]$kuning2$r8\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37mX\033[1;31m]$kuning2$r9\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37m-\033[1;31m]$kuning2$r10\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37mP\033[1;31m]$kuning2$r11\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37ml\033[1;31m]$kuning2$r12\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37mo\033[1;31m]$kuning2$r13\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37mi\033[1;31m]$kuning2$r14\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$red2."[\033[1;37mt\033[1;31m]$kuning2$r15\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-echo$blue2."══════════════════════════════════════════════\n";
-sleep(2);
-}}}
-}
-
-
-
-
-
-
-// MENU 4 RUN PROINFINITY.FUN
-if($menu== 4){
-    $host3 = "https://proinfinity.fun/session/autofaucet";
-    echo $kuning2 . "Data yg dibutuhkan : \n\n";
-    echo "User Agent : \n " . $green2 . $useragent . "\n\n";
-    echo $kuning2 . "ExpressCrypto ID : " . $green2 . $ecID . "\n\n";
-    echo $kuning2 . "Host : " . $green2 . $host3 . "\n\n";
-    echo $kuning2 . "Boost : " . $green2 . $bost3 . "\n\n";
-
-    //Menerima Data
-    echo $red2.">>> \033[1;32mRunning $kuning2 [";
-    for ($x = 0; $x <= 10; $x++) {
-        usleep(50000);echo $green2. "*";
-        usleep(70000);echo $red2. "*";
-    }
-    echo"$kuning2]\n\n\n";
-    $header = array(
-    "user-agent:".$useragent,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost3%22%2C%22payout_mode%22:%22ec%22}");
-    // Curl Get
-    $ch = curl_init();
-    // curl_setopt($ch, CURLOPT_URL, "https://proinfinity.fun/session/autofaucet");
-    curl_setopt($ch, CURLOPT_URL, $host3);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    $res = curl_exec($ch);
-    $token = explode('<i class="fas fa-coins"></i> INFINITY Coin: ',$res);
-    if(isset($token[1])){
-    $token = explode('</div>',$token[1])[0];
-    }
-    sleep(1);
-    echo$red2. "◼$kuning2 Welcome ";
-    sleep(1);
-    echo $red2."[".$green2.$user.$red2."]"."\n";
-    sleep(1);
-    echo$green2."◼$putih2 $ecID\n\n";
-    echo$red2. ">$lblue2 Token$putih2  :$kuning2 $token"."\n";
-    echo$red2. ">$lblue2 Boosts$putih2 :";echo$kuning2." $bost3"."X ";echo $red2."($putih2 Claim every 30s$red2)\n";
-    echo$r2."═════════════════════════════════════════════";
-    sleep(1);
-    echo"\n";
-    echo$putih2. $enter = "[!] [Pending Process (Press " . $green2 . "Enter" . $putih2 . " ) - To Start]\n\n\n";
-    $enter = trim(fgets(STDIN));
-
-    // START
-    while(true){
-    $header = array(
-    "user-agent:".$useragent,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost3%22%2C%22payout_mode%22:%22ec%22}");
-    // Curl Get
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $host3);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    $res = curl_exec($ch);
-    $token = explode('<i class="fas fa-coins"></i> Tokens: ',$res);
-    if(isset($token[1])){
-    $token = explode('</div>',$token[1])[0];
-    }
-    if($token == ""){
-    echo$On_Red."\033[1;37mCookie Not Found / Expired, Silahkan Isi / Ganti Ulang Cookie!\n".$reset;
-    sleep(1);
-    exit;
-    }else{
-    if($token == "0"){
-    sleep(1);
-    echo$On_Red."\033[1;37m   Butuh Token Untuk Menjalankan, Silahkan Farming Terlebih Dahulu !  \n".$reset;
-    sleep(1);
-    echo"\n";
-    echo "\033[1;91m ◼$green2 Tunggu 3 Detik Anda Akan Diarahkan Otomatis Untuk Farming Token\n";
-    sleep(1);
-    echo$putih2."Please wait ";
-    sleep(1);
-    echo$red2."•";
-    sleep(1);
-    echo$kuning2."•";
-    sleep(1);
-    echo$green2."•";
-    sleep(1);
-    system("xdg-open https://proinfinity.fun/sl");
-    sleep(1);
-    exit;
-    }else{
-    echo $reset;
-
-
-
-    $header = array(
-    "user-agent:".$useragent,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost3%22%2C%22payout_mode%22:%22ec%22}");
-    // Curl Get
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $host3);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    $res = curl_exec($ch);
-    $token = explode('<i class="fas fa-coins"></i> Tokens: ',$res);
-    if(isset($token[1])){
-    $token = explode('</div>',$token[1])[0];
-    }
-    echo"\n,";
-    for ($i=30;$i>-1;$i--){
-    echo "\r                                                                    \r";
-    date_default_timezone_set('Asia/Jakarta');
-    echo $red2."[ "; echo$green2."START";echo"$red2 | ";echo$lblue2. date('H:i:s');echo"$red2 ]";
-    echo $yellow2." Please Wait ";echo$green2."... ";echo$ungu2."( ";echo$putih2."$i";echo$putih2."s";echo$ungu2." )";
-    sleep(2);
-    echo "\r                                                                     \r";
+    //============================================================
+    // MENU 2 RUN AUTO.MULTICLAIM.NET
+    if($menu == 2){
+    
     }
 
-
-
-    $header = array(
-    "user-agent:".$useragent,
-    "referer: " . $host3,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22BCN%22%2C%22RDD%22%2C%22BTT%22%2C%22DGB%22%2C%22TRX%22%2C%22RVN%22%2C%22DOGE%22%2C%22VTC%22%2C%22PIVX%22%2C%22KMD%22%2C%22USDT%22%2C%22PPC%22%2C%22XRP%22%2C%22ADA%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost3%22%2C%22payout_mode%22:%22ec%22}");
-    // Curl Post
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $host3);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($ch, CURLOPT_POST, 1);
-    $data = "";
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    $cek = curl_exec($ch);
-    $r1 = explode('Successfully sent',$cek);
-    if(isset($r1[1])){
-    $r1 = explode('to',$r1[1])[0];
-    }
-    $r2 = explode('Successfully sent',$cek);
-    if(isset($r2[2])){
-    $r2 = explode('to',$r2[2])[0];
-    }
-    $r3 = explode('Successfully sent',$cek);
-    if(isset($r3[3])){
-    $r3 = explode('to',$r3[3])[0];
-    }
-    $r4 = explode('Successfully sent',$cek);
-    if(isset($r4[4])){
-    $r4 = explode('to',$r4[4])[0];
-    }
-    $r5 = explode('Successfully sent',$cek);
-    if(isset($r5[5])){
-    $r5 = explode('to',$r5[5])[0];
-    }
-    $r6 = explode('Successfully sent',$cek);
-    if(isset($r6[6])){
-    $r6 = explode('to',$r6[6])[0];
-    }
-    $r7 = explode('Successfully sent',$cek);
-    if(isset($r7[7])){
-    $r7 = explode('to',$r7[7])[0];
-    }
-    $r8 = explode('Successfully sent',$cek);
-    if(isset($r8[8])){
-    $r8 = explode('to',$r8[8])[0];
-    }
-    $r9 = explode('Successfully sent',$cek);
-    if(isset($r9[9])){
-    $r9 = explode('to',$r9[9])[0];
-    }
-    $r10 = explode('Successfully sent',$cek);
-    if(isset($r10[10])){
-    $r10 = explode('to',$r10[10])[0];
-    }
-    $r11 = explode('Successfully sent',$cek);
-    if(isset($r11[11])){
-    $r11 = explode('to',$r11[11])[0];
-    }
-    $r12 = explode('Successfully sent',$cek);
-    if(isset($r12[12])){
-    $r12 = explode('to',$r12[12])[0];
-    }
-    $r13 = explode('Successfully sent',$cek);
-    if(isset($r13[13])){
-    $r13 = explode('to',$r13[13])[0];
-    }
-    $r14 = explode('Successfully sent',$cek);
-    if(isset($r14[14])){
-    $r14 = explode('to',$r14[14])[0];
-    }
-    $r15 = explode('Successfully sent',$cek);
-    if(isset($r15[15])){
-    $r15 = explode('to',$r15[15])[0];
-    }
-    date_default_timezone_set('Asia/Jakarta');
-    echo$ungu2."═══════════";echo $red2."[ "; echo$lblue2. date('d-F-Y').$reset;echo"$red2 | ";echo$kuning2. date('H:i:s');echo$red2." ]";echo$ungu2."══════════\n";
-    echo$red2."[\033[1;37mi\033[1;31m]$kuning2$r1\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mt\033[1;31m]$kuning2$r2\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37ms\033[1;31m]$kuning2$r3\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mm\033[1;31m]$kuning2$r4\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37me\033[1;31m]$kuning2$r5\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;31m•\033[1;31m]$kuning2$r6\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mA\033[1;31m]$kuning2$r7\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mw\033[1;31m]$kuning2$r8\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mX\033[1;31m]$kuning2$r9\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37m-\033[1;31m]$kuning2$r10\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mP\033[1;31m]$kuning2$r11\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37ml\033[1;31m]$kuning2$r12\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mo\033[1;31m]$kuning2$r13\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mi\033[1;31m]$kuning2$r14\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mt\033[1;31m]$kuning2$r15\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$blue2."══════════════════════════════════════════════════\n";
-    sleep(2);
-    }}}
-}
-
-
-
-
-
-
-
-// MENU 5 PHOENIXFAUCETS.XYZ
-if($menu== 5){
-    $host4 = "https://phoenixfaucets.xyz/session/autofaucet";
-    echo $kuning2 . "Data yg dibutuhkan : \n\n";
-    echo "User Agent : \n " . $green2 . $useragent . "\n\n";
-    echo $kuning2 . "ExpressCrypto ID : " . $green2 . $ecID . "\n\n";
-    echo $kuning2 . "Host : " . $green2 . $host4 . "\n\n";
-    echo $kuning2 . "Boost : " . $green2 . $bost4 . "\n\n";
-
-    //Menerima Data
-    echo $red2.">>> \033[1;32mRunning $kuning2 [";
-    for ($x = 0; $x <= 10; $x++) {
-        usleep(50000);echo $green2. "*";
-        usleep(70000);echo $red2. "*";
-    }
-    echo"$kuning2]\n\n\n";
-    $header = array(
-    "user-agent:".$useragent,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22rdd%22%2C%22btt%22%2C%22dgb%22%2C%22trx%22%2C%22rvn%22%2C%22doge%22%2C%22vtc%22%2C%22pivx%22%2C%22kmd%22%2C%22usdt%22%2C%22ppc%22%2C%22xrp%22%2C%22ada%22%2C%22strax%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost4%22%2C%22payout_mode%22:%22ec%22}");
-    // Curl Get
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $host4);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    $res = curl_exec($ch);
-    $token = explode('<i class="fas fa-coins"></i> Phoenix Token: ',$res);
-    if(isset($token[1])){
-    $token = explode('</div>',$token[1])[0];
-    }
-    sleep(1);
-    echo$red2. "◼$kuning2 Welcome ";
-    sleep(1);
-    echo $red2."[".$green2.$user.$red2."]"."\n";
-    sleep(1);
-    echo$green2."◼$putih2 $ecID\n\n";
-    echo$red2. ">$lblue2 Token$putih2  :$kuning2 $token"."\n";
-    echo$red2. ">$lblue2 Boosts$putih2 :";echo$kuning2." $bost4"."X ";echo $red2."($putih2 Claim every 30s$red2)\n";
-    echo$r2."═══════════════════════════════════════════════════";
-    sleep(1);
-    echo"\n";
-    echo$putih2. $enter = "[!] [Pending Process (Press " . $green2 . "Enter" . $putih2 . " ) - To Start]\n\n\n";
-    $enter = trim(fgets(STDIN));
-
-    // START
-    while(true){
-    $header = array(
-    "user-agent:".$useragent,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22rdd%22%2C%22btt%22%2C%22dgb%22%2C%22trx%22%2C%22rvn%22%2C%22doge%22%2C%22vtc%22%2C%22pivx%22%2C%22kmd%22%2C%22usdt%22%2C%22ppc%22%2C%22xrp%22%2C%22ada%22%2C%22strax%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost4%22%2C%22payout_mode%22:%22ec%22}");
-    // Curl Get
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $host4);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    $res = curl_exec($ch);
-    $token = explode('<i class="fas fa-coins"></i> Tokens: ',$res);
-    if(isset($token[1])){
-    $token = explode('</div>',$token[1])[0];
-    }
-    if($token == ""){
-    echo$On_Red."\033[1;37mCookie Not Found / Expired, Silahkan Isi / Ganti Ulang Cookie!\n".$reset;
-    sleep(1);
-    exit;
-    }else{
-    if($token == "0"){
-    sleep(1);
-    echo$On_Red."\033[1;37m   Butuh Token Untuk Menjalankan, Silahkan Farming Terlebih Dahulu !  \n".$reset;
-    sleep(1);
-    echo"\n";
-    echo "\033[1;91m ◼$green2 Tunggu 3 Detik Anda Akan Diarahkan Otomatis Untuk Farming Token\n";
-    sleep(1);
-    echo$putih2."Please wait ";
-    sleep(1);
-    echo$red2."•";
-    sleep(1);
-    echo$kuning2."•";
-    sleep(1);
-    echo$green2."•";
-    sleep(1);
-    system("xdg-open https://phoenixfaucets.xyz/sl");
-    sleep(1);
-    exit;
-    }else{
-    echo $reset;
-
-
-
-    $header = array(
-    "user-agent:".$useragent,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22rdd%22%2C%22btt%22%2C%22dgb%22%2C%22trx%22%2C%22rvn%22%2C%22doge%22%2C%22vtc%22%2C%22pivx%22%2C%22kmd%22%2C%22usdt%22%2C%22ppc%22%2C%22xrp%22%2C%22ada%22%2C%22strax%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost4%22%2C%22payout_mode%22:%22ec%22}");
-    // Curl Get
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $host4);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    $res = curl_exec($ch);
-    $token = explode('<i class="fas fa-coins"></i> Tokens: ',$res);
-    if(isset($token[1])){
-    $token = explode('</div>',$token[1])[0];
-    }
-    echo"\n,";
-    for ($i=30;$i>-1;$i--){
-    echo "\r                                                                    \r";
-    date_default_timezone_set('Asia/Jakarta');
-    echo $red2."[ "; echo$green2."START";echo"$red2 | ";echo$lblue2. date('H:i:s');echo"$red2 ]";
-    echo $yellow2." Please Wait ";echo$green2."... ";echo$ungu2."( ";echo$putih2."$i";echo$putih2."s";echo$ungu2." )";
-    sleep(2);
-    echo "\r                                                                     \r";
+    //============================================================
+    // MENU 3 RUN BESTAUTOFAUCET.COM
+    if($menu == 3){
+    
     }
 
-
-
-    $header = array(
-    "user-agent:".$useragent,
-    "referer: ".$host4,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[%22SHIB%22%2C%22rdd%22%2C%22btt%22%2C%22dgb%22%2C%22trx%22%2C%22rvn%22%2C%22doge%22%2C%22vtc%22%2C%22pivx%22%2C%22kmd%22%2C%22usdt%22%2C%22ppc%22%2C%22xrp%22%2C%22ada%22%2C%22strax%22]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost4%22%2C%22payout_mode%22:%22ec%22}");
-    // Curl Post
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $host4);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-    curl_setopt($ch, CURLOPT_POST, 1);
-    $data = "";
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    $cek = curl_exec($ch);
-    $r1 = explode('Successfully sent',$cek);
-    if(isset($r1[1])){
-    $r1 = explode('to',$r1[1])[0];
+    //============================================================
+    // MENU 4 RUN PROINFINITY.FUN
+    if($menu == 4){
+    
     }
-    $r2 = explode('Successfully sent',$cek);
-    if(isset($r2[2])){
-    $r2 = explode('to',$r2[2])[0];
-    }
-    $r3 = explode('Successfully sent',$cek);
-    if(isset($r3[3])){
-    $r3 = explode('to',$r3[3])[0];
-    }
-    $r4 = explode('Successfully sent',$cek);
-    if(isset($r4[4])){
-    $r4 = explode('to',$r4[4])[0];
-    }
-    $r5 = explode('Successfully sent',$cek);
-    if(isset($r5[5])){
-    $r5 = explode('to',$r5[5])[0];
-    }
-    $r6 = explode('Successfully sent',$cek);
-    if(isset($r6[6])){
-    $r6 = explode('to',$r6[6])[0];
-    }
-    $r7 = explode('Successfully sent',$cek);
-    if(isset($r7[7])){
-    $r7 = explode('to',$r7[7])[0];
-    }
-    $r8 = explode('Successfully sent',$cek);
-    if(isset($r8[8])){
-    $r8 = explode('to',$r8[8])[0];
-    }
-    $r9 = explode('Successfully sent',$cek);
-    if(isset($r9[9])){
-    $r9 = explode('to',$r9[9])[0];
-    }
-    $r10 = explode('Successfully sent',$cek);
-    if(isset($r10[10])){
-    $r10 = explode('to',$r10[10])[0];
-    }
-    $r11 = explode('Successfully sent',$cek);
-    if(isset($r11[11])){
-    $r11 = explode('to',$r11[11])[0];
-    }
-    $r12 = explode('Successfully sent',$cek);
-    if(isset($r12[12])){
-    $r12 = explode('to',$r12[12])[0];
-    }
-    $r13 = explode('Successfully sent',$cek);
-    if(isset($r13[13])){
-    $r13 = explode('to',$r13[13])[0];
-    }
-    $r14 = explode('Successfully sent',$cek);
-    if(isset($r14[14])){
-    $r14 = explode('to',$r14[14])[0];
-    }
-    $r15 = explode('Successfully sent',$cek);
-    if(isset($r15[15])){
-    $r15 = explode('to',$r15[15])[0];
-    }
-    date_default_timezone_set('Asia/Jakarta');
-    echo$ungu2."═══════════";echo $red2."[ "; echo$lblue2. date('d-F-Y').$reset;echo"$red2 | ";echo$kuning2. date('H:i:s');echo$red2." ]";echo$ungu2."═════════\n";
-    echo$red2."[\033[1;37mi\033[1;31m]$kuning2$r1\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mt\033[1;31m]$kuning2$r2\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37ms\033[1;31m]$kuning2$r3\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mm\033[1;31m]$kuning2$r4\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37me\033[1;31m]$kuning2$r5\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;31m•\033[1;31m]$kuning2$r6\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mA\033[1;31m]$kuning2$r7\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mw\033[1;31m]$kuning2$r8\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mX\033[1;31m]$kuning2$r9\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37m-\033[1;31m]$kuning2$r10\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mP\033[1;31m]$kuning2$r11\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37ml\033[1;31m]$kuning2$r12\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mo\033[1;31m]$kuning2$r13\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mi\033[1;31m]$kuning2$r14\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$red2."[\033[1;37mt\033[1;31m]$kuning2$r15\033[1;31m> \033[1;32mSuccessfully sent to \33[37;1mE\033[1;31mX\033[1;37mpress\033[1;31mC\033[1;37mrypto\n";
-    echo$blue2."═════════════════════════════════════════════════\n";
-    sleep(2);
-    }}}
-}
 
+    //============================================================
+    // MENU 5 RUN PHOENIXFAUCETS.XYZ
+    if($menu == 5){
+    
+    }
 
+    // MENU 6 JOIN GRUP
+    if($menu== 6){
+        menu6();
+    }
 
+    // MENU 7 CONTACT AUTHOR
+    if($menu== 7){
+        menu7();
+    }
+*/
+    // CLOSING WHILE MENU
 
-
-
-// MENU 6 JOIN GRUP
-if($menu== 6){
-echo"\n\n";
-sleep(1);
-echo$green2. " Please wait";
-sleep(1);
-echo ".";
-sleep(1);
-echo ".";
-sleep(1);
-echo ".";
-sleep(2);
-system(" xdg-open https://chat.whatsapp.com/IWFGtvAIYIM72aquw3XlZK ");
-sleep(3);
-echo"\n\n";
-echo $enter = "[Process completed (code 4) - press Enter]";
-$enter = trim(fgets(STDIN));
-}
-
-
-
-
-
-// MENU 7 CONTACT AUTHOR
-if($menu== 7){
-echo"\n\n";
-sleep(1);
-echo$green2. " Please wait";
-sleep(1);
-echo ".";
-sleep(1);
-echo ".";
-sleep(1);
-echo ".";
-sleep(2);
-system (" xdg-open https://wa.me/+6281617922247?text=Permisi+bang");
-sleep(3);
-echo"\n\n";
-echo $enter = "[Process completed (code 5) - press Enter]";
-$enter = trim(fgets(STDIN));
-}
-
-
-
-// CLOSING WHILE MENU
 }
 ?>
