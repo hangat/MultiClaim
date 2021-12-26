@@ -18,7 +18,6 @@ $purple2="\033[1;35m";
 $lblue="\033[0;36m";
 $lblue2="\033[1;36m";
 
-
 //color
 $hijau = "\33[0;32m";
 $hijau1 = "\33[32;1m";
@@ -106,28 +105,66 @@ $host1 = "https://auto.multiclaim.net/session/autofaucet";
 $host2 = "https://bestautofaucet.com/session/autofaucet";
 $host3 = "https://proinfinity.fun/session/autofaucet";
 $host4 = "https://phoenixfaucets.xyz/session/autofaucet";
+$host5 = "https://dragonfaucets.xyz/session/autofaucet";
+$host6 = "https://superautofaucet.com/session/autofaucet";
+$host7 = "https://mcmfaucets.xyz/session/autofaucet";
+$host8 = "https://auto.earnads.top/session/autofaucet";
+$host9 = "https://jupiterfaucet.net/session/autofaucet";
+$host10 = "https://cryptolight.xyz/session/autofaucet";
+$host11 = "https://alphafaucet.xyz/session/autofaucet";
+$host12 = "https://claimcoins.club/session/autofaucet";
+$host13 = "https://cryptosway.xyz/session/autofaucet";
+$host14 = "https://auto.xtrabits.click/session/autofaucet";
+
 
 $sl1 = "https://auto.multiclaim.net/sl";
 $sl2 = "https://bestautofaucet.com/sl";
 $sl3 = "https://proinfinity.fun/sl";
 $sl4 = "https://phoenixfaucets.xyz/sl";
+$sl5 = "https://dragonfaucets.xyz/sl";
+$sl6 = "https://superautofaucet.com/sl";
+$sl7 = "https://mcmfaucets.xyz/sl";
+$sl8 = "https://auto.earnads.top/sl";
+$sl9 = "https://jupiterfaucet.net/sl";
+$sl10 = "https://cryptolight.xyz/sl";
+$sl11 = "https://alphafaucet.xyz/sl";
+$sl12 = "https://claimcoins.club/sl";
+$sl13 = "https://cryptosway.xyz/sl";
+$sl14 = "https://auto.xtrabits.click/sl";
+
 
 $host="";$bost="";$sl="";
 $sTokenA1='<i class="fas fa-coins"></i> Tokens: ';
 $sTokenA2='<i class="fas fa-coins"></i> Coins: ';
 $sTokenA3='<i class="fas fa-coins"></i> INFINITY Coin: ';
 $sTokenA4='<i class="fas fa-coins"></i> Phoenix Token: ';
+$sTokenA5='<i class="fas fa-coins"></i> Dragon Token: ';
+$sTokenA6='<i class="fas fa-coins"></i> Coins: ';
+$sTokenA7='<i class="fas fa-coins"></i> MCM Tokens: ';
+$sTokenA8='<i class="fas fa-coins"></i> Coins: ';
+$sTokenA9='<i class="fas fa-coins"></i> Jupiter Coins: ';
+$sTokenA10='<i class="fas fa-coins"></i> Coins: ';
+$sTokenA11='<i class="fas fa-coins"></i> Alpha Coins: ';
+$sTokenA12='<i class="fas fa-coins"></i> Coins: ';
+$sTokenA13='<i class="fas fa-coins"></i> WAY: ';
+$sTokenA14='<i class="fas fa-coins"></i> coins: ';//coins: 328
 $sTokenA='';
 $coins='';
 
 function cRun($menu){
-global $host1, $host2, $host3, $host4, $sl1, $sl2, $sl3, $sl4;
-global $bost1, $bost2, $bost3, $bost4, $host,$bost, $sl;
+global $host1,$host2,$host3,$host4,$host5,$host6,$host7,$host8,$host9,$host10,$host11,$host12,$host13,$host14;
+global $sl1,$sl2,$sl3,$sl4,$sl5,$sl6,$sl7,$sl8,$sl9,$sl10,$sl11,$sl12,$sl13,$sl14;
+global $bost1,$bost2,$bost3,$bost4,$bost5,$bost6,$bost7,$bost8,$bost9,$bost10,$bost11,$bost12,$bost13,$bost14;
+global $host,$bost,$sl;
 
-global $sTokenA1, $sTokenA2, $sTokenA3, $sTokenA4, $sTokenA;
-global $coins,$coins1,$coins2,$coins3,$coins4 ;
+global $sTokenA1,$sTokenA2,$sTokenA3,$sTokenA4,$sTokenA5,$sTokenA6,$sTokenA7,$sTokenA8,$sTokenA9,$sTokenA10,$sTokenA11,$sTokenA12,$sTokenA13,$sTokenA14;
+global $sTokenA;
+
+global $coins1,$coins2,$coins3,$coins4,$coins5,$coins6,$coins7,$coins8,$coins9,$coins10,$coins11,$coins12,$coins13,$coins14  ;
+global $coins;
+
     switch($menu){
-        case 2:
+        case 1:
             $host = $host1;
             $bost = $bost1;
             $sl = $sl1;
@@ -135,26 +172,96 @@ global $coins,$coins1,$coins2,$coins3,$coins4 ;
             $coins=$coins1;
 
             break;
-        case 3:
+        case 2:
             $host = $host2;
             $bost = $bost2;
             $sl = $sl2;
             $sTokenA = $sTokenA2;
             $coins=$coins2;
             break;
-        case 4:
+        case 3:
             $host = $host3;
             $bost = $bost3;
             $sl = $sl3;
             $sTokenA = $sTokenA3;
             $coins=$coins3;
             break;
-        case 5:
+        case 4:
             $host = $host4;
             $bost = $bost4;
             $sl = $sl4;
             $sTokenA = $sTokenA4;
             $coins=$coins4;
+            break;
+        case 5:
+            $host = $host5;
+            $bost = $bost5;
+            $sl = $sl5;
+            $sTokenA = $sTokenA5;
+            $coins=$coins5;
+            break;
+        case 6:
+            $host = $host6;
+            $bost = $bost6;
+            $sl = $sl6;
+            $sTokenA = $sTokenA6;
+            $coins=$coins6;
+            break;
+        case 7:
+            $host = $host7;
+            $bost = $bost7;
+            $sl = $sl7;
+            $sTokenA = $sTokenA7;
+            $coins=$coins7;
+            break;
+        case 8:
+            $host = $host8;
+            $bost = $bost8;
+            $sl = $sl8;
+            $sTokenA = $sTokenA8;
+            $coins=$coins8;
+            break;
+        case 9:
+            $host = $host9;
+            $bost = $bost9;
+            $sl = $sl9;
+            $sTokenA = $sTokenA9;
+            $coins=$coins9;
+            break;
+        case 10:
+            $host = $host10;
+            $bost = $bost10;
+            $sl = $sl10;
+            $sTokenA = $sTokenA10;
+            $coins=$coins10;
+            break;
+        case 11:
+            $host = $host11;
+            $bost = $bost11;
+            $sl = $sl11;
+            $sTokenA = $sTokenA11;
+            $coins=$coins11;
+            break;
+        case 12:
+            $host = $host12;
+            $bost = $bost12;
+            $sl = $sl12;
+            $sTokenA = $sTokenA12;
+            $coins=$coins12;
+            break;
+        case 13:
+            $host = $host13;
+            $bost = $bost13;
+            $sl = $sl13;
+            $sTokenA = $sTokenA13;
+            $coins=$coins13;
+            break;
+        case 14:
+            $host = $host14;
+            $bost = $bost14;
+            $sl = $sl14;
+            $sTokenA = $sTokenA14;
+            $coins=$coins14;
             break;
         default:
             // echo "default";
@@ -162,7 +269,7 @@ global $coins,$coins1,$coins2,$coins3,$coins4 ;
     }
 }
 
-function menu0(){
+function menu01(){
     global $kuning2, $green2, $red2, $putih2, $ungu2;
 
     system('clear');
@@ -186,7 +293,7 @@ function menu0(){
 
 }
 
-function menu1(){
+function menu0(){
     global $kuning2, $green2, $red2, $putih2;
     system('clear');
     echo $green2. "Input diisi di file :" . $kuning2. "inc.php " . $green2. "saja\n\n"; sleep(1);
@@ -208,94 +315,134 @@ function menu1(){
 
 }
 
-function menu6(){
-    global $green2,$putih2,$red2;
-    echo"\n\n";
-    sleep(1);
-    echo$putih2. " Please wait ";
-    sleep(1);
-    for ($x = 0; $x <= 10; $x++) {
-        usleep(50000);echo $green2. "*";
-        usleep(70000);echo $red2. "*";
-    }
-    echo "\n\n";
-    system(" xdg-open https://chat.whatsapp.com/IWFGtvAIYIM72aquw3XlZK ");
-    sleep(1);
-    echo"\n\n";
-    echo "[Process completed (code 4) - press Enter]\n\n";
-    $enter = trim(fgets(STDIN));
-}
-
-function menu7(){
-    global $green2,$putih2,$red2;
-
-    echo"\n\n";
-    sleep(1);
-    echo$putih2. " Please wait ";
-    sleep(1);
-    for ($x = 0; $x <= 10; $x++) {
-        usleep(50000);echo $green2. "*";
-        usleep(70000);echo $red2. "*";
-    }
-    echo "\n\n";
-    system (" xdg-open https://wa.me/+6281617922247?text=Permisi+bang");
-    sleep(1);
-    echo"\n\n";
-    echo "[Process completed (code 5) - press Enter]";
-    $enter = trim(fgets(STDIN));
-
-}
 
 function Wait60(){
-    $red2="\033[1;31m"; $green2="\033[1;32m"; $ungu2 = "\e[1;35m";
+    $red2="\033[1;31m"; $green2="\033[1;32m";
     $putih2="\033[1;37m"; $yellow2="\033[1;33m";
     date_default_timezone_set('Asia/Jakarta');
 
-    for ($i=30;$i>-1;$i--){
-        $ii = $i * 2; $ii=str_pad($ii, 2, '0', STR_PAD_LEFT);
+    for ($i=60;$i>-1;$i--){
+        $ii = $i * 1; $ii=str_pad($ii, 2, '0', STR_PAD_LEFT);
         $s=$red2 ."[".$green2."START".$red2. "|".$green2. date('H:i:s').$red2."]";
-        $s=$s.$yellow2." Please Wait ".$green2. "... ".$ungu2."(".$putih2."$ii".$putih2."s".$ungu2.")";
+        $s=$s.$yellow2." Please Wait ".$green2. "... ".$red2."(".$putih2."$ii".$putih2."s".$red2.")";
         $sp="                                                                 ";
         echo $s."\r";
-        sleep(2);
+        sleep(1);
 
     }
 }
 
 function showMenu(){
     global $kuning2, $green2, $red2, $putih2, $menu;
-
+	global $sl1,$sl2,$sl3,$sl4,$sl5,$sl6,$sl7,$sl8,$sl9,$sl10,$sl11,$sl12,$sl13,$sl14;
+	
+	//$l1=explode("https://",$sl1)[1];
+	$l1=trim(explode("/sl",explode("https://",$sl1)[1])[0]);
+	$l2=trim(explode("/sl",explode("https://",$sl2)[1])[0]);
+	$l3=trim(explode("/sl",explode("https://",$sl3)[1])[0]);
+	$l4=trim(explode("/sl",explode("https://",$sl4)[1])[0]);
+	$l5=trim(explode("/sl",explode("https://",$sl5)[1])[0]);
+	$l6=trim(explode("/sl",explode("https://",$sl6)[1])[0]);
+	$l7=trim(explode("/sl",explode("https://",$sl7)[1])[0]);
+	$l8=trim(explode("/sl",explode("https://",$sl8)[1])[0]);
+	$l9=trim(explode("/sl",explode("https://",$sl9)[1])[0]);
+	$l10=trim(explode("/sl",explode("https://",$sl10)[1])[0]);
+	$l11=trim(explode("/sl",explode("https://",$sl11)[1])[0]);
+	$l12=trim(explode("/sl",explode("https://",$sl12)[1])[0]);
+	$l13=trim(explode("/sl",explode("https://",$sl13)[1])[0]);
+	$l14=trim(explode("/sl",explode("https://",$sl14)[1])[0]);
+	
     system('clear');
-    echo "                          \e[1;35m<<<\033[1;31m[\033[1;32m+\033[1;31m]$kuning2 MENU \033[1;31m[\033[1;32m+\033[1;31m]\e[1;35m>>>\n\n";
-    echo "\33[37;1m[\033[1;32m0\33[37;1m]$red2 >>>$kuning2 Script Info\n\n";
-    echo "\33[37;1m[\033[1;32m1\33[37;1m]$red2 >>>$kuning2 Input Data / Set Data\n\n";
-    echo "\33[37;1m[\033[1;32m2\33[37;1m]$red2 >>>$kuning2 Running Host:$red2 [$green2 auto.multiclaim.net$red2 ]\n";
-    echo "\33[37;1m[\033[1;32m3\33[37;1m]$red2 >>>$kuning2 Running Host:$red2 [$green2 bestautofaucet.com$red2 ]\n";
-    echo "\33[37;1m[\033[1;32m4\33[37;1m]$red2 >>>$kuning2 Running Host:$red2 [$green2 proinfinity.fun$red2 ]\n";
-    echo "\33[37;1m[\033[1;32m5\33[37;1m]$red2 >>>$kuning2 Running Host:$red2 [$green2 phoenixfaucets.xyz$red2 ]\n\n";
-    echo "\33[37;1m[\033[1;32m6\33[37;1m]$red2 >>>$kuning2 Join WhatsApp Group | Forum Diskusi\n";
-    echo "\33[37;1m[\033[1;32m7\33[37;1m]$red2 >>>$kuning2 Contact AwX-Ploit (Creator)\n\n";
-    echo$red2. " ◼$green2 Choose$putih2 :$green2 ";
+//    echo "test : " . $l1 . "\n";
+	
+	echo $red2. "▓▒░  |$kuning2 MENU $red2|  ░▒▓\n";
+	echo $red2. "▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄" ."\n";
+    echo "\33[37;1m[\033[1;32m 0\33[37;1m]$red2 |$green2 Input Data / Set Data\n";
+	echo $red2. "────────────────────────────" ."\n";
+    echo "\33[37;1m[\033[1;32m 1\33[37;1m]$red2 |$green2 $l1 \n";
+    echo "\33[37;1m[\033[1;32m 2\33[37;1m]$red2 |$green2 $l2 \n";
+    echo "\33[37;1m[\033[1;32m 3\33[37;1m]$red2 |$green2 $l3 \n";
+    echo "\33[37;1m[\033[1;32m 4\33[37;1m]$red2 |$green2 $l4 \n";
+    echo "\33[37;1m[\033[1;32m 5\33[37;1m]$red2 |$green2 $l5 \n";
+    echo "\33[37;1m[\033[1;32m 6\33[37;1m]$red2 |$green2 $l6 \n";
+    echo "\33[37;1m[\033[1;32m 7\33[37;1m]$red2 |$green2 $l7 \n";
+    echo "\33[37;1m[\033[1;32m 8\33[37;1m]$red2 |$green2 $l8 \n";
+    echo "\33[37;1m[\033[1;32m 9\33[37;1m]$red2 |$green2 $l9 \n";
+    echo "\33[37;1m[\033[1;32m10\33[37;1m]$red2 |$green2 $l10 \n";
+    echo "\33[37;1m[\033[1;32m11\33[37;1m]$red2 |$green2 $l11 \n";
+    echo "\33[37;1m[\033[1;32m12\33[37;1m]$red2 |$green2 $l12 \n";
+    echo "\33[37;1m[\033[1;32m13\33[37;1m]$red2 |$green2 $l13 \n";
+    echo "\33[37;1m[\033[1;32m14\33[37;1m]$red2 |$green2 $l14 \n";
+ 	echo $red2   . "────────────────────────────" . "\n";
+    echo $red2. "╞▓▒░ |$kuning2 Choose$putih2 :$green2 ";
     $menu = trim(fgets(STDIN));
 
 }
 
 function GetHeader($host,$useragent,$ecID,$bost,$coins,$default="GET"){
-    $c = urlencode($coins);
+    global $payout_mode;
+	
+	$c = urlencode($coins);
     if($default<>"GET"){
         $header = array(
         "user-agent:".$useragent,
         "referer: " . $host,
-        "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[$c]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost%22%2C%22payout_mode%22:%22ec%22}");
+//        "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[$c]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost%22%2C%22payout_mode%22:%22ec%22}");
+        "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[$c]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost%22%2C%22payout_mode%22:%22$payout_mode%22}");
         return $header;
         exit(0);
     }
     $header = array(
     "user-agent:".$useragent,
-    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[$c]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost%22%2C%22payout_mode%22:%22ec%22}");
+//    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[$c]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost%22%2C%22payout_mode%22:%22ec%22}");
+    "cookie: session=$ecID;session_ok=true;auto={%22ecid%22:%22$ecID%22%2C%22coins%22:[$c]%2C%22mode%22:%22multi%22%2C%22boost%22:%22$bost%22%2C%22payout_mode%22:%22$payout_mode%22}");
     return $header;
 }
 
+//untuk format 
+function fn($r){
+	$jc = explode(" ",$r)[0];
+	$nc = explode(" ",$r)[1];
+	$jc = (strlen($jc) <=8 ? "0." . sprintf('%08d',$jc) : $jc);
+	$nc= str_pad($nc, 6, " ", STR_PAD_RIGHT);
+	//$nc = (strlen($nc)<4 ? $nc . " " : $nc);
+	$t = $jc . " " . $nc;
+	return $t;
+}	
+
+//untuk format
+function fr($cek,$idx,&$t){
+	$r = explode('Successfully sent',$cek);
+	if(isset($r[$idx])){
+		$r = explode('to',$r[$idx])[0];
+		$r=trim($r);
+		$t=fn($r);
+		return $r;
+	}
+
+}
+
+//untuk nampilin
+function ft($r,$t,$nm){
+    global $kuning2,$green2,$red2,$putih2,$payout_mode;
+	
+	if(strlen($r)>0){
+		if($payout_mode=="ec"){
+			echo$red2."[".$nm."]$kuning2 $t $red2 > $green2 Sent to $putih2 EXpressCrypto.io\n";
+		}
+		else{
+			echo$red2."[".$nm."]$kuning2 $t $red2 > $green2 Sent to $putih2 FaucetPay.io\n";
+		}
+	}
+}
+
+function GetToken($sTokenA,$res){
+	$token = explode($sTokenA,$res);
+	if(isset($token[1])){
+		$token = explode('</div>',$token[1])[0];
+		return $token;
+	}
+}
 function curlGetPost($host,$useragent,$ecID,$bost,$coins,$default="GET"){
     $header=GetHeader($host,$useragent,$ecID,$bost,$coins,$default);
 	$ch = curl_init();
@@ -316,14 +463,15 @@ function curlGetPost($host,$useragent,$ecID,$bost,$coins,$default="GET"){
 function globalRun(){
     global $kuning2, $green2, $red2, $On_Red, $putih2, $blue2, $lblue2, $yellow2, $ungu2;
     global $useragent, $ecID, $host, $sl, $bost, $user,$reset,$sTokenA;
-    global $coins;
+    global $coins,$menu;
+    global $payout_mode;
 
     echo "\n\n";
-    echo $kuning2 . "Data yg dibutuhkan : \n";
-    echo $green2 . "_____________________ \n" . $kuning2 ;
+    echo $kuning2 ."Data yg dibutuhkan : \n";
+    echo $red2   . "════════════════════ \n" . $kuning2 ;
     echo "User Agent : \n " . $green2 . $useragent . "\n\n";
     echo $kuning2 . "ExpressCrypto ID : " . $green2 . $ecID . "\n";
-    echo $kuning2 . "Host : " . $green2 . $host . "\n";
+    echo $kuning2 . "Host  : " . $green2 . $host . "\n";
     echo $kuning2 . "Boost : " . $green2 . $bost . "\n\n";
 
     //Menerima Data
@@ -337,31 +485,27 @@ function globalRun(){
 
     // Curl Get
     $res = curlGetPost($host,$useragent,$ecID,$bost,$coins);
-    $token = explode($sTokenA ,$res);
-    if(isset($token[1])){
-        $token = explode('</div>',$token[1])[0];
-    }
-    echo$red2. "◼$kuning2 Welcome ";
-    sleep(1);
-    echo $red2."[".$green2.$user.$red2."]"."\n";
-    sleep(1);
-    echo$green2."◼$putih2 $ecID\n";
-    echo$red2. ">$lblue2 Token$putih2  :$kuning2 $token \n";
-    echo$red2. ">$lblue2 Coin$putih2   : ";echo$kuning2. $coins . "\n";
-    echo$red2. ">$lblue2 Boosts$putih2 :";echo$kuning2." $bost"."X ";echo $red2."($putih2 Claim every 60s$red2)\n";
+	$token=GetToken($sTokenA,$res);
+    
+	echo$red2. "◼$kuning2 Welcome ";
+    usleep(50000);
+    echo $red2."[".$green2.$user.$red2."] | ";
+    usleep(50000);
+    echo$green2."◼$putih2 $ecID | " . $green2. "Payout_mode: ".$putih2. $payout_mode . "\n";
+    echo$red2. "> ".$kuning2. "Token" .$putih2. "  : " .trim($token);
+    echo$red2. " |$kuning2 Boosts :";echo$putih2." $bost"."X ";echo $red2."(".$putih2."Claim every 60s$red2)\n";
+    echo$red2. ">$kuning2 Coin   : ";echo$putih2. $coins . "\n";
     echo$red2."══════════════════════════════════════════════════";
     echo"\n";
-    echo$putih2. $enter = "[!] [Pending Process (Press " . $green2 . "Enter" . $putih2 . " ) - To Start]\n\n";
-    $enter = trim(fgets(STDIN));
+    echo$putih2. $enter = "[!] [Pending Process (Press " . $green2 . "Enter" . $putih2 . " ) - To Start] ";
+    $enter = trim(fgetc(STDIN));
 
     $ncoin =count(array($coins))+1;
+    //echo "ncoin : " . $ncoin . "\n";
     // START
     while(true){
         $res = curlGetPost($host,$useragent,$ecID,$bost,$coins);
-        $token = explode($sTokenA,$res);
-        if(isset($token[1])){
-            $token = explode('</div>',$token[1])[0];
-        }
+		$token=GetToken($sTokenA,$res);
         if($token == ""){
             echo$On_Red."\033[1;37mCookie Not Found / Expired, Silahkan Isi / Ganti Ulang Cookie!\n".$reset;
             sleep(1);
@@ -388,122 +532,81 @@ function globalRun(){
             }else{
                 echo $reset;
                 $res = curlGetPost($host,$useragent,$ecID,$bost,$coins);
-                $token = explode($sTokenA,$res);
-                if(isset($token[1])){
-                    $token = explode('</div>',$token[1])[0];
-                }
-                echo"\n";
+				$token=GetToken($sTokenA,$res);
+				echo"\n";
                 Wait60();
                 sleep(1);
                 $cek = curlGetPost($host,$useragent,$ecID,$bost,$coins,"POST");
-                $r1 = explode('Successfully sent',$cek);
-                if(isset($r1[1])){
-                    $r1 = explode('to',$r1[1])[0];
-                }
-                $r2 = explode('Successfully sent',$cek);
-                if(isset($r2[2])){
-                    $r2 = explode('to',$r2[2])[0];
-                }
-                $r3 = explode('Successfully sent',$cek);
-                if(isset($r3[3])){
-                    $r3 = explode('to',$r3[3])[0];
-                }
-                $r4 = explode('Successfully sent',$cek);
-                if(isset($r4[4])){
-                    $r4 = explode('to',$r4[4])[0];
-                }
-                $r5 = explode('Successfully sent',$cek);
-                if(isset($r5[5])){
-                    $r5 = explode('to',$r5[5])[0];
-                }
-                $r6 = explode('Successfully sent',$cek);
-                if(isset($r6[6])){
-                    $r6 = explode('to',$r6[6])[0];
-                }
-                $r7 = explode('Successfully sent',$cek);
-                if(isset($r7[7])){
-                    $r7 = explode('to',$r7[7])[0];
-                }
-                $r8 = explode('Successfully sent',$cek);
-                if(isset($r8[8])){
-                    $r8 = explode('to',$r8[8])[0];
-                }
-                $r9 = explode('Successfully sent',$cek);
-                if(isset($r9[9])){
-                    $r9 = explode('to',$r9[9])[0];
-                }
-                $r10 = explode('Successfully sent',$cek);
-                if(isset($r10[10])){
-                    $r10 = explode('to',$r10[10])[0];
-                }
-                $r11 = explode('Successfully sent',$cek);
-                if(isset($r11[11])){
-                    $r11 = explode('to',$r11[11])[0];
-                }
-                $r12 = explode('Successfully sent',$cek);
-                if(isset($r12[12])){
-                    $r12 = explode('to',$r12[12])[0];
-                }
-                $r13 = explode('Successfully sent',$cek);
-                if(isset($r13[13])){
-                    $r13 = explode('to',$r13[13])[0];
-                }
-                $r14 = explode('Successfully sent',$cek);
-                if(isset($r14[14])){
-                    $r14 = explode('to',$r14[14])[0];
-                }
-                $r15 = explode('Successfully sent',$cek);
-                if(isset($r15[15])){
-                    $r15 = explode('to',$r15[15])[0];
-                }
-                sleep(2);
+
+				$r1=fr($cek,1,$t1);
+				$r2=fr($cek,2,$t2);
+				$r3=fr($cek,3,$t3);
+				$r4=fr($cek,4,$t4);
+				$r5=fr($cek,5,$t5);
+				$r6=fr($cek,6,$t6);
+				$r7=fr($cek,7,$t7);
+				$r8=fr($cek,8,$t8);
+				$r9=fr($cek,9,$t9);
+				$r10=fr($cek,10,$t10);
+				$r11=fr($cek,11,$t11);
+				$r12=fr($cek,12,$t12);
+				$r13=fr($cek,13,$t13);
+				$r14=fr($cek,14,$t14);
+				$r15=fr($cek,15,$t15);
+				$r16=fr($cek,16,$t16);
+				$r17=fr($cek,17,$t17);
+				$r18=fr($cek,18,$t18);
+				$r19=fr($cek,19,$t19);
+				$r20=fr($cek,20,$t20);
+				$r21=fr($cek,21,$t21);
+				$r22=fr($cek,22,$t22);
+				$r23=fr($cek,23,$t23);
+				$r24=fr($cek,24,$t24);
+				$r25=fr($cek,25,$t25);
+				$r26=fr($cek,26,$t26);
+				$r27=fr($cek,27,$t27);
+				$r28=fr($cek,28,$t28);
+				
+				usleep(50000);
+				//sleep(1);
                 date_default_timezone_set('Asia/Jakarta');
-                echo$red2."[01]$kuning2$r1 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                echo$red2."[02]$kuning2$r2 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                if($ncoin>=3){
-                    echo$red2."[03]$kuning2$r3 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=4){
-                    echo$red2."[04]$kuning2$r4 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=5){
-                    echo$red2."[05]$kuning2$r5 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=6){
-                    echo$red2."[06]$kuning2$r6 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=7){
-                    echo$red2."[07]$kuning2$r7 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=8){
-                    echo$red2."[08]$kuning2$r8 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=9){
-                    echo$red2."[09]$kuning2$r9 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=10){
-                    echo$red2."[10]$kuning2$r10 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=11){
-                    echo$red2."[11]$kuning2$r11 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=12){
-                    echo$red2."[12]$kuning2$r12 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=13){
-                    echo$red2."[13]$kuning2$r13 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=14){
-                    echo$red2."[14]$kuning2$r14 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                if($ncoin>=15){
-                    echo$red2."[15]$kuning2$r15 $red2 > $green2 Successfully sent to $putih2 EXpressCrypto\n";
-                }
-                echo $blue2."════════════════════════════════════════════════\n";
-                echo $blue2 . ">" . $putih2. $host . $red2 . "\n";
-                echo $blue2 . ">" . $putih2. "Coins: " . $red2 . $coins . "\n" ;
-                echo $blue2 . ">" . $putih2. "Token: " . $red2. $token . "\n";
-                sleep(1);
+                $tgljam = date("Y-m-d H:i:s");
+
+				ft($r1,$t1,'01');
+				ft($r2,$t2,'02');
+				ft($r3,$t3,'03');
+				ft($r4,$t4,'04');
+				ft($r5,$t5,'05');
+				ft($r6,$t6,'06');
+				ft($r7,$t7,'07');
+				ft($r8,$t8,'08');
+				ft($r9,$t9,'09');
+				ft($r10,$t10,'10');
+				ft($r11,$t11,'11');
+				ft($r12,$t12,'12');
+				ft($r13,$t13,'13');
+				ft($r14,$t14,'14');
+				ft($r15,$t15,'15');
+				ft($r16,$t16,'16');
+				ft($r17,$t17,'17');
+				ft($r18,$t18,'18');
+				ft($r19,$t19,'19');
+				ft($r20,$t20,'20');
+				ft($r21,$t21,'21');
+				ft($r22,$t22,'22');
+				ft($r23,$t23,'23');
+				ft($r24,$t24,'24');
+				ft($r25,$t25,'25');
+				ft($r26,$t26,'26');
+				ft($r27,$t27,'27');
+				ft($r28,$t28,'28');
+				
+                echo $green2."════════════════════════════════════════════════\n";
+                echo $green2 . " >" . $putih2. $menu .$green2. " >" .$putih2. $host .$red2. "\n";
+                echo $green2 . " >" .$putih2. "Coins: " .$kuning2. $coins . "\n" ;
+                echo $green2 . " >" .$putih2. "Token: " .$kuning2. trim($token).$red2." | Boost:".$kuning2. $bost .$red2." | ".$kuning2. trim($tgljam) . "\n";
+                //sleep(1);
+				usleep(50000);
             }
         }
     }
@@ -516,15 +619,14 @@ error_reporting(0);
 while(true){
     showMenu();
 
-    switch($menu){
-        case 0: menu0();break;
-        case 1: menu1();break;
-        case 2: cRun($menu); globalRun();break;
-        case 3: cRun($menu); globalRun();break;
-        case 4: cRun($menu); globalRun();break;
-        case 5: cRun($menu); globalRun();break;
-        case 6: menu6();break;
-        case 7: menu7();break;
-    }
+	if($menu==0){
+		menu0();
+	}
+	elseif($menu>=1 && $menu<=14){
+		cRun($menu); globalRun();//break;		
+	}	
+	else{
+		//break;
+	}	
 }
 ?>
