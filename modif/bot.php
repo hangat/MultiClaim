@@ -400,12 +400,11 @@ function GetHeader($host,$useragent,$ecID,$bost,$coins,$default="GET"){
 }
 
 //untuk format 
-function fn($r){
+function fn1($r){
 	$jc = explode(" ",$r)[0];
 	$nc = explode(" ",$r)[1];
 	$jc = (strlen($jc) <=8 ? "0." . sprintf('%08d',$jc) : $jc);
 	$nc= str_pad($nc, 6, " ", STR_PAD_RIGHT);
-	//$nc = (strlen($nc)<4 ? $nc . " " : $nc);
 	$t = $jc . " " . $nc;
 	return $t;
 }	
@@ -416,7 +415,7 @@ function fr($cek,$idx,&$t){
 	if(isset($r[$idx])){
 		$r = explode('to',$r[$idx])[0];
 		$r=trim($r);
-		$t=fn($r);
+		$t=fn1($r);
 		return $r;
 	}
 
